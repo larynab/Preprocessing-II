@@ -26,17 +26,29 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media @mobile {
+      flex-direction: column;
+    }
 
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        width: 92%;
+        padding: 4%;
+        
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        width: 98%;
+        padding: 1%;
+      }
 
       img {
         border-radius: 10px;
@@ -73,10 +85,18 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @mobile {
+      flex-direction: column;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        width: 100%;
+        align-items: center;
+        padding: 10%;
+      }
     
     .btn {
       font-size: 1.2rem;
